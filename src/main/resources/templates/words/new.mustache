@@ -1,0 +1,16 @@
+{{>layouts/header}}
+
+<form class="container" action="/words/create" method="post">
+    <div class="mb-3">
+        <label class="form-label">단어(한국어)</label>
+        <input type="text" class="form-control" name="kWord">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">단어(내용)</label>
+        <textarea class="form-control" rows="3" name="eWord"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">과제제출</button>
+    <a href="/words">돌아가기</a>
+</form>
+
+{{>layouts/footer}}

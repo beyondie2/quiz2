@@ -1,0 +1,22 @@
+{{>layouts/header}}
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">번호</th>
+        <th scope="col">단어(한국어)</th>
+        <th scope="col">단어(영어)</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#wordList}}
+        <tr>
+            <th>{{id}}</th>
+            <td><a href="/words/{{id}}">{{kWord}}</a></td>
+            <td>{{eWord}}</td>
+        </tr>
+    {{/wordList}}
+    </tbody>
+</table>
+<a href="/words/new">새 단어</a>
+{{>layouts/footer}}
